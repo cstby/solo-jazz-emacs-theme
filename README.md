@@ -18,7 +18,7 @@
 
 <br/>
 
-## About:
+## About
 
 Inspired by the [Jazz](https://en.wikipedia.org/wiki/Jazz_(design)) design, this eye-pleasing theme fits into any modern day work environment while tastefully showcasing a late 20th century aesthetic.
 
@@ -36,15 +36,15 @@ Download `jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these l
 ## Supported Modes
 
 - avy
-- centaur tabs
+- centaur-tabs
 - company
 - cider
 - doom-modeline
 - diff
 - ediff
-- ivy (counsel and projectile)
 - ido
 - isearch
+- ivy (counsel and projectile)
 - keycast
 - magit
 - lispy
@@ -52,6 +52,7 @@ Download `jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these l
 - markdown
 - neotree
 - post-tip
+- show-paren
 - racket
 - undo-tree
 - web-mode
@@ -62,5 +63,4 @@ Please feel free to send a GitHub pull request to add support for your favorite 
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
+Distributed under the GNU General Public License, version 3.
