@@ -197,6 +197,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(doom-modeline-buffer-major-mode					((t (:foreground ,solo-jazz-purple))))
    `(doom-modeline-info												((t (:foreground ,solo-jazz-teal))))
 
+	 ;; ido
+   `(ido-first-match													((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
+   `(ido-only-match														((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
+   `(ido-subdir																((t (:foreground ,solo-jazz-blue))))
+   `(ido-indicator														((t (:foreground ,solo-jazz-teal :background ,solo-jazz-purple))))
+
 	 ;; isearch
 	 `(isearch																	((t (:foreground ,solo-jazz-purple+1 :weight bold :background ,solo-jazz-teal+1))))
    `(isearch-fail															((t (:foreground ,solo-jazz-red :background ,solo-jazz-white))))
@@ -213,12 +219,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ivy-minibuffer-match-face-2							((t (:background ,solo-jazz-grey))))
    `(ivy-minibuffer-match-face-3							((t (:background ,solo-jazz-grey))))
    `(ivy-minibuffer-match-face-4							((t (:background ,solo-jazz-purple))))
-
-	 ;; ido
-   `(ido-first-match													((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
-   `(ido-only-match														((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
-   `(ido-subdir																((t (:foreground ,solo-jazz-blue))))
-   `(ido-indicator														((t (:foreground ,solo-jazz-teal :background ,solo-jazz-purple))))
 
 	 ;; keycast
 	 `(keycast-command													((t (:foreground ,solo-jazz-blue))))
