@@ -191,92 +191,127 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-file-header                         ((,class (:background ,solo-jazz-white :foreground ,solo-jazz-purple :bold t)) (t (:background ,solo-jazz-purple :foreground ,solo-jazz-white :bold t))))
 
    ;; doom-modeline
-   `(doom-modeline-buffer-path                ((t (:foreground ,solo-jazz-purple))))
-   `(doom-modeline-project-dir                ((t (:foreground ,solo-jazz-blue))))
-   `(doom-modeline-buffer-file                ((t (:foreground ,solo-jazz-pink))))
-   `(doom-modeline-buffer-major-mode          ((t (:foreground ,solo-jazz-purple))))
-   `(doom-modeline-info                       ((t (:foreground ,solo-jazz-teal))))
+   `(doom-modeline-buffer-path								((t (:foreground ,solo-jazz-purple))))
+   `(doom-modeline-project-dir								((t (:foreground ,solo-jazz-blue))))
+   `(doom-modeline-buffer-file								((t (:foreground ,solo-jazz-pink))))
+   `(doom-modeline-buffer-major-mode					((t (:foreground ,solo-jazz-purple))))
+   `(doom-modeline-info												((t (:foreground ,solo-jazz-teal))))
 
-   ;; ido
-   `(ido-first-match                          ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
-   `(ido-only-match                           ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
-   `(ido-subdir                               ((t (:foreground ,solo-jazz-blue))))
-   `(ido-indicator                            ((t (:foreground ,solo-jazz-teal :background ,solo-jazz-purple))))
+	 ;; hl-line
+	 `(hl-line-face                             ((,class (:background ,solo-jazz-white+1)) (t :weight bold)))
+	 `(hl-line                                  ((,class (:background ,solo-jazz-white+1)) (t :weight bold)))
+	 
+	 ;; ido
+   `(ido-first-match													((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
+   `(ido-only-match														((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
+   `(ido-subdir																((t (:foreground ,solo-jazz-blue))))
+   `(ido-indicator														((t (:foreground ,solo-jazz-teal :background ,solo-jazz-purple))))
 
-   ;; isearch
-   `(isearch                                  ((t (:foreground ,solo-jazz-purple+1 :weight bold :background ,solo-jazz-teal+1))))
-   `(isearch-fail                             ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white))))
-   `(lazy-highlight                           ((t (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-white-1))))
+	 ;; isearch
+	 `(isearch																	((t (:foreground ,solo-jazz-purple+1 :weight bold :background ,solo-jazz-teal+1))))
+   `(isearch-fail															((t (:foreground ,solo-jazz-red :background ,solo-jazz-white))))
+   `(lazy-highlight														((t (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-white-1))))
 
-   ;; ivy
-   `(ivy-confirm-face                         ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
-   `(ivy-current-match                        ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple :weight bold)))) 
-   `(ivy-match-required-face                  ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
-   `(ivy-remote                               ((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
-   `(ivy-subdir                               ((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
-   `(ivy-virtual                              ((t (:foreground ,solo-jazz-grey))))
-   `(ivy-minibuffer-match-face-1              ((t (:background ,solo-jazz-white-1))))
-   `(ivy-minibuffer-match-face-2              ((t (:background ,solo-jazz-grey))))
-   `(ivy-minibuffer-match-face-3              ((t (:background ,solo-jazz-grey))))
-   `(ivy-minibuffer-match-face-4              ((t (:background ,solo-jazz-purple))))
+	 ;; ivy
+   `(ivy-confirm-face													((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(ivy-current-match												((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple :weight bold)))) 
+   `(ivy-match-required-face									((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(ivy-remote																((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
+   `(ivy-subdir																((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
+   `(ivy-virtual															((t (:foreground ,solo-jazz-grey))))
+   `(ivy-minibuffer-match-face-1							((t (:background ,solo-jazz-white-1))))
+   `(ivy-minibuffer-match-face-2							((t (:background ,solo-jazz-grey))))
+   `(ivy-minibuffer-match-face-3							((t (:background ,solo-jazz-grey))))
+   `(ivy-minibuffer-match-face-4							((t (:background ,solo-jazz-purple))))
 
-   ;; keycast
-   `(keycast-command                          ((t (:foreground ,solo-jazz-blue))))
-   `(keycast-key                              ((t (:foreground ,solo-jazz-teal+1 :background ,solo-jazz-purple))))
+	 ;; keycast
+	 `(keycast-command													((t (:foreground ,solo-jazz-blue))))
+	 `(keycast-key															((t (:foreground ,solo-jazz-teal+1 :background ,solo-jazz-purple))))
 
-   ;; lispy
-   `(lispy-command-name-face                  ((t (:background ,solo-jazz-white-1 :inherit font-lock-function-name-face))))
-   `(lispy-cursor-face                        ((t (:foreground ,solo-jazz-white :background ,solo-jazz-purple))))
-   `(lispy-face-hint                          ((t (:inherit highlight :foreground ,solo-jazz-teal))))
+	 ;; lispy
+   `(lispy-command-name-face									((t (:background ,solo-jazz-white-1 :inherit font-lock-function-name-face))))
+   `(lispy-cursor-face												((t (:foreground ,solo-jazz-white :background ,solo-jazz-purple))))
+   `(lispy-face-hint													((t (:inherit highlight :foreground ,solo-jazz-teal))))
 
-   
-   ;; magit
-   `(magit-bisect-good                        ((t (:foreground ,solo-jazz-grey))))
-   `(magit-bisect-skip                        ((t (:foreground ,solo-jazz-teal))))
-   `(magit-bisect-bad                         ((t (:foreground ,solo-jazz-blue+1))))
+	 
+	 ;; magit
+	 `(magit-bisect-good												((t (:foreground ,solo-jazz-grey))))
+   `(magit-bisect-skip												((t (:foreground ,solo-jazz-teal))))
+   `(magit-bisect-bad													((t (:foreground ,solo-jazz-blue+1))))
 
-   `(magit-blame-heading                      ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
-   `(magit-blame-hash                         ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
-   `(magit-blame-name                         ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
-   `(magit-blame-date                         ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
-   `(magit-blame-summary                      ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple :weight bold))))
+	 `(magit-blame-heading											((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(magit-blame-hash													((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(magit-blame-name													((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(magit-blame-date													((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(magit-blame-summary											((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple :weight bold))))
 
-   `(magit-branch-remote                      ((t (:foreground ,solo-jazz-green  :weight bold))))
-   `(magit-branch-local                       ((t (:foreground ,solo-jazz-blue+1   :weight bold))))
-   `(magit-branch-current                     ((t (:foreground ,solo-jazz-blue+1   :weight bold :box t))))
+	 `(magit-branch-remote											((t (:foreground ,solo-jazz-green  :weight bold))))
+   `(magit-branch-local												((t (:foreground ,solo-jazz-blue+1   :weight bold))))
+   `(magit-branch-current											((t (:foreground ,solo-jazz-blue+1   :weight bold :box t))))
 
-   `(magit-cherry-unmatched                   ((t (:foreground ,solo-jazz-pink))))
-   `(magit-cherry-equivalent                  ((t (:foreground ,solo-jazz-purple))))
+	 `(magit-cherry-unmatched										((t (:foreground ,solo-jazz-pink))))
+   `(magit-cherry-equivalent									((t (:foreground ,solo-jazz-purple))))
 
-   `(magit-diffstat-added                     ((t (:foreground ,solo-jazz-blue))))
-   `(magit-diffstat-removed                   ((t (:foreground ,solo-jazz-blue+1))))
-   
-   `(magit-diff-added                         ((t (:inherit diff-added))))
-   `(magit-diff-added-highlight               ((t (:inherit diff-refine-added))))
-   `(magit-diff-context-highlight             ((t (:background ,solo-jazz-white :foreground "grey70"))))
-   `(magit-diff-file-heading                  ((t (:weight bold))))
-   `(magit-diff-file-heading-highlight        ((t (:background ,solo-jazz-white  :weight bold))))
-   `(magit-diff-file-heading-selection        ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
-   `(magit-diff-hunk-heading                  ((t (:background ,solo-jazz-white))))
-   `(magit-diff-hunk-heading-highlight        ((t (:background ,solo-jazz-white))))
-   `(magit-diff-hunk-heading-selection        ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple))))
-   `(magit-diff-lines-heading                 ((t (:background ,solo-jazz-purple :foreground ,solo-jazz-white))))
-   `(magit-diff-removed                       ((t (:inherit diff-removed))))
-   `(magit-diff-removed-highlight             ((t (:inherit diff-refine-removed))))
+	 `(magit-diffstat-added											((t (:foreground ,solo-jazz-blue))))
+   `(magit-diffstat-removed										((t (:foreground ,solo-jazz-blue+1))))
+	 
+	 `(magit-diff-added													((t (:inherit diff-added))))
+   `(magit-diff-added-highlight								((t (:inherit diff-refine-added))))
+	 `(magit-diff-context-highlight							((t (:background ,solo-jazz-white :foreground "grey70"))))
+	 `(magit-diff-file-heading									((t (:weight bold))))
+   `(magit-diff-file-heading-highlight				((t (:background ,solo-jazz-white  :weight bold))))
+   `(magit-diff-file-heading-selection				((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
+	 `(magit-diff-hunk-heading									((t (:background ,solo-jazz-white))))
+   `(magit-diff-hunk-heading-highlight				((t (:background ,solo-jazz-white))))
+   `(magit-diff-hunk-heading-selection				((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple))))
+	 `(magit-diff-lines-heading									((t (:background ,solo-jazz-purple :foreground ,solo-jazz-white))))
+   `(magit-diff-removed												((t (:inherit diff-removed))))
+   `(magit-diff-removed-highlight							((t (:inherit diff-refine-removed))))
 
-   `(magit-dimmed                             ((t (:foreground ,solo-jazz-grey))))
-   `(magit-hash                               ((t (:foreground ,solo-jazz-pink))))
-   `(magit-head                               ((t (:foreground ,solo-jazz-purple   :weight bold))))
-   
-   `(magit-log-author                         ((t (:foreground ,solo-jazz-blue))))
-   `(magit-log-date                           ((t (:foreground ,solo-jazz-purple))))
-   `(magit-log-graph                          ((t (:foreground ,solo-jazz-purple))))
-   
-   `(magit-popup-heading                      ((t (:foreground ,solo-jazz-teal  :weight bold))))
-   `(magit-popup-key                          ((t (:foreground ,solo-jazz-grey :weight bold))))
-   `(magit-popup-argument                     ((t (:foreground ,solo-jazz-grey   :weight bold))))
-   `(magit-popup-disabled-argument            ((t (:foreground ,solo-jazz-purple    :weight normal))))
-   `(magit-popup-option-value                 ((t (:foreground ,solo-jazz-purple  :weight bold))))
+	 `(magit-dimmed															((t (:foreground ,solo-jazz-grey))))
+	 `(magit-hash																((t (:foreground ,solo-jazz-pink))))
+	 `(magit-head																((t (:foreground ,solo-jazz-purple   :weight bold))))
+	 
+   `(magit-log-author													((t (:foreground ,solo-jazz-blue))))
+   `(magit-log-date														((t (:foreground ,solo-jazz-purple))))
+   `(magit-log-graph													((t (:foreground ,solo-jazz-purple))))
+	 
+   `(magit-popup-heading											((t (:foreground ,solo-jazz-teal  :weight bold))))
+   `(magit-popup-key													((t (:foreground ,solo-jazz-grey :weight bold))))
+   `(magit-popup-argument											((t (:foreground ,solo-jazz-grey   :weight bold))))
+   `(magit-popup-disabled-argument						((t (:foreground ,solo-jazz-purple    :weight normal))))
+   `(magit-popup-option-value									((t (:foreground ,solo-jazz-purple  :weight bold))))
+	 
+   `(magit-process-ok													((t (:inheret success))))
+   `(magit-process-ng													((t (:inherit error))))
+
+	 `(magit-reflog-commit											((t (:foreground ,solo-jazz-grey))))
+   `(magit-reflog-amend												((t (:foreground ,solo-jazz-purple))))
+   `(magit-reflog-merge												((t (:foreground ,solo-jazz-grey))))
+   `(magit-reflog-checkout										((t (:foreground ,solo-jazz-purple))))
+   `(magit-reflog-reset												((t (:foreground ,solo-jazz-blue+1))))
+   `(magit-reflog-rebase											((t (:foreground ,solo-jazz-purple))))
+   `(magit-reflog-cherry-pick									((t (:foreground ,solo-jazz-grey))))
+   `(magit-reflog-remote											((t (:foreground ,solo-jazz-pink))))
+   `(magit-reflog-other												((t (:foreground ,solo-jazz-pink))))
+
+	 `(magit-refname														((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
+   `(magit-refname-stash											((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
+   `(magit-refname-wip												((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
+	 
+   `(magit-section-highlight									((t (:background ,solo-jazz-white-1))))
+   `(magit-section-heading										((t (:foreground ,solo-jazz-teal :weight bold))))
+   `(magit-section-heading-selection					((t (:foreground ,solo-jazz-purple :weight bold))))
+	 
+   `(magit-sequence-pick											((t (:foreground ,solo-jazz-purple))))
+   `(magit-sequence-stop											((t (:foreground ,solo-jazz-grey))))
+   `(magit-sequence-part											((t (:foreground ,solo-jazz-teal))))
+   `(magit-sequence-head											((t (:foreground ,solo-jazz-purple))))
+   `(magit-sequence-drop											((t (:foreground ,solo-jazz-blue+1))))
+   `(magit-sequence-done											((t (:foreground ,solo-jazz-purple))))
+   `(magit-sequence-onto											((t (:foreground ,solo-jazz-purple))))
+
+   `(magit-tag																((t (:foreground ,solo-jazz-pink :weight bold))))
    
    `(magit-process-ok                         ((t (:inheret success))))
    `(magit-process-ng                         ((t (:inherit error))))
