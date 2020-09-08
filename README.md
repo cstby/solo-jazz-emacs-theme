@@ -64,8 +64,8 @@ You can change the theme's base colors by defining them in the `solo-jazz-overri
 ```elisp
 (setq solo-jazz-override-colors-alist
       '(("solo-jazz-black" . "#000000")
-	    ("solo-jazz-white" . "#ffffff")))
-	  
+        ("solo-jazz-white" . "#ffffff")))
+      
 (load-theme 'solo-jazz t)
 ```
 
