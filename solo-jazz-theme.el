@@ -38,10 +38,11 @@
 
 (defvar solo-jazz-default-colors-alist
   '(("solo-jazz-white+1"                . "#ffffff")
-    ("solo-jazz-white"                  . "#fafafa")
+		("solo-jazz-white"                  . "#fafafa")
     ("solo-jazz-off-white"              . "#efefef")
-    ("solo-jazz-white-1"                . "#eaeafa")
-    ("solo-jazz-border"                 . "#d0d0d0")
+		("solo-jazz-white-1"                . "#eaeafa")
+    ("solo-jazz-white-2"                . "#eafafa")
+		("solo-jazz-border"                 . "#d0d0d0")
     ("solo-jazz-black"                  . "#24292e")
     ("solo-jazz-grey"                   . "#778ca3")
 
@@ -198,8 +199,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(doom-modeline-info												((t (:foreground ,solo-jazz-teal))))
 
 	 ;; hl-line
-	 `(hl-line-face                             ((,class (:background ,solo-jazz-white+1)) (t :weight bold)))
-	 `(hl-line                                  ((,class (:background ,solo-jazz-white+1)) (t :weight bold)))
+	 `(hl-line-face                             ((,class (:background ,solo-jazz-white-2)) (t :weight bold)))
+	 `(hl-line                                  ((,class (:background ,solo-jazz-white-2)) (t :weight bold)))
 	 
 	 ;; ido
    `(ido-first-match													((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
