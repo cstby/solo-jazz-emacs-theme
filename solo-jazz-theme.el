@@ -382,9 +382,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(racket-selfeval-face                     ((t (:inherit font-lock-type-face))))
 
    ;; show-paren
-   `(show-paren-mismatch                      ((t (:foreground ,solo-jazz-grey :background ,solo-jazz-white :weight bold))))
+   `(show-paren-mismatch                      ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white :weight bold))))
    `(show-paren-match                         ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
-
+   `(show-paren-match-expression              ((t (:background ,solo-jazz-off-white))))
    
    ;; undo-tree
    `(undo-tree-visualizer-active-branch-face  ((t (:foreground ,solo-jazz-teal :weight bold))))
