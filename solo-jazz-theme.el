@@ -27,7 +27,7 @@
 ;;; Credits:
 
 ;; Gina Ekiss created the original solo-jazz design that inspired this theme.
-;; Bozhidar Batsov wrote the Zenburn theme on which this code is based.
+;; Bozhidar Batsov's emacs port of the Zenburn theme served as the base for this file.
 ;; Ian Y.E Pan's many emacs themes were the starting point for my readme.
 
 ;;; Code:
