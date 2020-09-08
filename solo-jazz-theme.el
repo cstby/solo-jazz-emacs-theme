@@ -307,7 +307,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-sequence-done                      ((t (:foreground ,solo-jazz-purple))))
    `(magit-sequence-onto                      ((t (:foreground ,solo-jazz-purple))))
 
-   `(magit-tag                                ((t (:foreground ,solo-jazz-pink :weight bold))))
+   `(magit-tag                                ((t (:foreground ,solo-jazz-blue :weight bold))))
    
    `(magit-signature-good                     ((t (:foreground ,solo-jazz-grey))))
    `(magit-signature-bad                      ((t (:foreground ,solo-jazz-blue+1))))
