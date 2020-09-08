@@ -57,6 +57,18 @@ Download `jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these l
 - undo-tree
 - web-mode
 
+## Custom colors
+
+You can change the theme's base colors by defining them in the `solo-jazz-override-colors-alist`variable. You must define this variable before loading the theme. For example:
+
+```elisp
+(setq solo-jazz-override-colors-alist
+      '(("solo-jazz-black" . "#000000")
+	    ("solo-jazz-white" . "#ffffff")))
+	  
+(load-theme 'solo-jazz t)
+```
+
 ## Contributing
 
 Please feel free to send a GitHub pull request to add support for your favorite packages. If you find any bugs or problems, please report them in the issue tracker. I welcome contributions of any kind.
