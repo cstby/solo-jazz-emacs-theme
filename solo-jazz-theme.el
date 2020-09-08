@@ -229,6 +229,13 @@ Also bind `class' to ((class color) (min-colors 89))."
 	 `(keycast-command													((t (:foreground ,solo-jazz-blue))))
 	 `(keycast-key															((t (:foreground ,solo-jazz-teal+1 :background ,solo-jazz-purple))))
 
+	 ;; linum
+	 `(linum                                    ((t (:foreground ,solo-jazz-grey :background ,solo-jazz-white))))
+
+	 ;; line-number
+	 `(line-number                              ((,class (:foreground ,solo-jazz-grey :background ,solo-jazz-white :inherit default))))
+   `(line-number-current-line                 ((,class (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-white :inherit line-number))))
+
 	 ;; lispy
    `(lispy-command-name-face									((t (:background ,solo-jazz-white-1 :inherit font-lock-function-name-face))))
    `(lispy-cursor-face												((t (:foreground ,solo-jazz-white :background ,solo-jazz-purple))))
