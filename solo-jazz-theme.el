@@ -358,7 +358,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(markdown-header-face                    ((t (:foreground ,solo-jazz-teal :weight bold))))
    `(markdown-language-keyword-face          ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-pink :weight bold))))
    `(markdown-inline-code-face               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-blue :background ,solo-jazz-white-1))))
-   `(markdown-code-face                      ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-blue :background ,solo-jazz-white-1))))
+   `(markdown-code-face                      ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-blue :background ,solo-jazz-white-1 :extend t))))
 
    ;; neotree
    `(neo-banner-face                         ((t (:foreground ,solo-jazz-teal :weight bold))))
