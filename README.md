@@ -45,8 +45,10 @@ Download `jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these l
 - ido
 - isearch
 - ivy (counsel and projectile)
+- hl-line
 - keycast
 - magit
+- line numbers
 - lispy
 - magit
 - markdown
