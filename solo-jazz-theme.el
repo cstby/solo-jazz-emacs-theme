@@ -422,7 +422,19 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-server-string-face             ((t (:inherit web-mode-string-face))))
    `(web-mode-symbol-face                    ((t (:inherit font-lock-constant-face))))
    `(web-mode-warning-face                   ((t (:inherit font-lock-warning-face))))
-   `(web-mode-whitespaces-face               ((t (:background ,solo-jazz-blue+1))))))
+   `(web-mode-whitespaces-face               ((t (:background ,solo-jazz-blue+1))))
+
+   ;; whitespace
+   `(whitespace-space                        ((t (:background ,solo-jazz-white :foreground ,solo-jazz-slate))))
+   `(whitespace-hspace                       ((t (:background ,solo-jazz-white :foreground ,solo-jazz-slate))))
+   `(whitespace-newline                      ((t (:background ,solo-jazz-white :foreground ,solo-jazz-slate))))
+   `(whitespace-trailing                     ((t (:background ,solo-jazz-red :foreground ,solo-jazz-white))))
+   `(whitespace-space-before-tab             ((t (:background ,solo-jazz-red :foreground ,solo-jazz-white))))
+   `(whitespace-space-after-tab              ((t (:background ,solo-jazz-red :foreground ,solo-jazz-white))))
+   `(whitespace-tab                          ((t (:background ,solo-jazz-red :foreground ,solo-jazz-white))))
+   `(whitespace-indentation                  ((t (:background ,solo-jazz-pink :foreground ,solo-jazz-white))))
+   `(whitespace-empty                        ((t (:background ,solo-jazz-pink :foreground ,solo-jazz-white))))
+   `(whitespace-line                         ((t (:background ,solo-jazz-white-1 :extend t :foreground ,solo-jazz-violet :weight bold))))))
 
 ;;; Theme Variables
 (solo-jazz-with-color-variables
