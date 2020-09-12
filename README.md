@@ -26,11 +26,11 @@ Inspired by the [Jazz](https://en.wikipedia.org/wiki/Jazz_(design)) design, this
 
 ## Installation
 
-Download `jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these lines to your `init.el`:
+Download `solo-jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these lines to your `init.el`:
 
 ```emacs-lisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'jazz t)
+(load-theme 'solo-jazz t)
 ```
 
 ## Supported Modes
