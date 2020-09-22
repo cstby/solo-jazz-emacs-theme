@@ -405,6 +405,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-css-at-rule-face               ((t (:foreground ,solo-jazz-orange ))))
    `(web-mode-css-prop-face                  ((t (:foreground ,solo-jazz-orange))))
    `(web-mode-css-pseudo-class-face          ((t (:foreground ,solo-jazz-teal :weight bold))))
+   `(web-mode-current-column-highlight-face  ((t (:background ,solo-jazz-lavender))))
+   `(web-mode-current-element-highlight-face ((t (:background ,solo-jazz-azure))))
    `(web-mode-css-rule-face                  ((t (:foreground ,solo-jazz-teal))))
    `(web-mode-doctype-face                   ((t (:inherit ,font-lock-comment-face))))
    `(web-mode-folded-face                    ((t (:underline t))))
