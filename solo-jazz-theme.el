@@ -170,7 +170,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(company-preview-common                  ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-teal+1))))
 
    ;; cider
-   `(cider-result-overlay-face               ((t (:forground ,solo-jazz-purple :box (:color ,solo-jazz-purple :line-width -1)))))
+   `(cider-result-overlay-face               ((t (:foreground ,solo-jazz-purple :box (:color ,solo-jazz-purple :line-width -1)))))
    `(cider-enlightened-face                  ((t (:box (:color ,solo-jazz-purple :line-width -1)))))
    `(cider-enlightened-local-face            ((t (:weight bold :foreground ,solo-jazz-purple))))
    `(cider-deprecated-face                   ((t (:background ,solo-jazz-purple))))
