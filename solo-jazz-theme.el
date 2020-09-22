@@ -379,21 +379,23 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(neo-vc-ignored-face                     ((t (:foreground ,solo-jazz-purple))))
 
    ;; org
-   `(org-agenda-clocking                     ((t (:bold t :background ,solo-jazz-white))) t)
-   `(org-agenda-date-today                   ((t (:foreground ,solo-jazz-purple :slant italic :weight bold))) t)
+   `(org-agenda-clocking                     ((t (:bold t :background ,solo-jazz-white))))
+   `(org-agenda-date-today                   ((t (:foreground ,solo-jazz-purple :slant italic :weight bold))))
+   `(org-agenda-done                         ((t (:foreground ,solo-jazz-teal+1 :strike-through t))))
    `(org-agenda-structure                    ((t (:foreground ,solo-jazz-slate))))
 
    `(org-archived                            ((t (:foreground ,solo-jazz-purple :weight bold))))
-   `(org-block                               ((t (:foreground ,solo-jazz-black :background ,solo-jazz-white-1 :extend t))))
+   `(org-block                               ((t (:foreground ,solo-jazz-black :background ,solo-jazz-white-1 :extend t :inherit 'fixed-pitch))))
    `(org-checkbox                            ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :box (:line-width 1 :style released-button)))))
+   `(org-code                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-slate))))
    `(org-column                              ((t (:background ,solo-jazz-teal+1))))
    `(org-column-title                        ((t (:background ,solo-jazz-teal+1 :underline t :weight bold))))
    `(org-date                                ((t (:foreground ,solo-jazz-purple :underline t))))
    `(org-deadline-announce                   ((t (:foreground ,solo-jazz-purple))))
    `(org-document-info                       ((t (:foreground ,solo-jazz-teal))))
-   `(org-document-info-keyword               ((t (:foreground ,solo-jazz-slate))))
-   `(org-document-title                      ((t (:foreground ,solo-jazz-pink :weight bold))))
-   `(org-done                                ((t (:bold t :weight bold :foreground ,solo-jazz-teal+1))))
+   `(org-document-info-keyword               ((t (:inherit font-lock-comment-face))))
+   `(org-document-title                      ((t (:foreground ,solo-jazz-blue :weight bold))))
+   `(org-done                                ((t (:weight bold :foreground ,solo-jazz-teal+1 :strike-through t))))
    `(org-ellipsis                            ((t (:foreground ,solo-jazz-purple :underline t))))
    `(org-footnote                            ((t (:foreground ,solo-jazz-blue :underline t))))
    `(org-formula                             ((t (:foreground ,solo-jazz-purple))))
@@ -407,8 +409,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-habit-alert-future-face             ((t :background ,solo-jazz-violet :foreground ,solo-jazz-white)))
    `(org-habit-overdue-future-face           ((t :background ,solo-jazz-orange)))
 
-   `(org-headline-done                       ((t (:foreground ,solo-jazz-teal+1))))
-   `(org-hide                                ((t (:foreground ,solo-jazz-teal))))
+   `(org-headline-done                       ((t (:foreground ,solo-jazz-teal+1 :strike-through t))))
+   `(org-hide                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-white))))
+   `(org-indent                              ((t (:foreground ,solo-jazz-white :inherit 'fixed-pitch))))
 
    `(org-level-1                             ((t (:foreground ,solo-jazz-teal))))
    `(org-level-2                             ((t (:foreground ,solo-jazz-blue))))
@@ -419,8 +422,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-level-7                             ((t (:foreground ,solo-jazz-purple+1))))
    `(org-level-8                             ((t (:foreground ,solo-jazz-black))))
 
-   `(org-link                                ((t (:foreground ,solo-jazz-purple :underline t))))
-   `(org-meta-line                           ((t (:foreground ,solo-jazz-slate))))
+   `(org-link                                ((t (:foreground ,solo-jazz-blue+1 :underline t))))
+   `(org-meta-line                           ((t (:inherit font-lock-comment-face))))
    `(org-mode-line-clock                     ((t (:foreground ,solo-jazz-teal+1 :background ,solo-jazz-purple))))
    `(org-mode-line-clock-overrun             ((t (:foreground ,solo-jazz-white :background ,solo-jazz-purple))))
 
