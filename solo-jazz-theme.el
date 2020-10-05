@@ -77,9 +77,6 @@
 You can override a subset of the theme's default colors by
 defining them in this alist before loading the theme.")
 
-(defvar solo-jazz-colors-alist
-  (append solo-jazz-default-colors-alist solo-jazz-override-colors-alist))
-
 (defmacro solo-jazz-with-color-variables (&rest body)
   "`let' bind all colors defined in `solo-jazz-colors-alist' around BODY.
 Also bind `class' to ((class color) (min-colors 89))."
@@ -87,7 +84,8 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(let ((class '((class color) (min-colors 89)))
          ,@(mapcar (lambda (cons)
                      (list (intern (car cons)) (cdr cons)))
-                   solo-jazz-colors-alist))
+                   (append solo-jazz-default-colors-alist
+                           solo-jazz-override-colors-alist)))
      ,@body))
 
 ;;; Theme Faces
