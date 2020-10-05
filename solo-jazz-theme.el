@@ -113,7 +113,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    ;; basic
    `(default                                 ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
-   `(link                                    ((t (:foreground ,solo-jazz-teal :underline t))))
+   `(link                                    ((t (:foreground ,solo-jazz-blue+1 :underline t))))
    `(link-visited                            ((t (:inherit link :underline nil))))
    '(button                                  ((t (:inherit link))))
    `(cursor                                  ((t (:background ,solo-jazz-teal+1))))
