@@ -115,7 +115,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; basic
    `(default                                 ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
    `(link                                    ((t (:foreground ,solo-jazz-blue+1 :underline t))))
-   `(link-visited                            ((t (:inherit link :underline nil))))
+   `(link-visited                            ((t (:foreground ,solo-jazz-blue+1 :underline nil))))
    '(button                                  ((t (:inherit link))))
    `(cursor                                  ((t (:background ,solo-jazz-teal+1))))
    `(escape-glyph                            ((t (:foreground ,solo-jazz-teal))))
@@ -233,13 +233,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(linum                                   ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-white))))
 
    ;; line-number
-   `(line-number                             ((,class (:foreground ,solo-jazz-slate :background ,solo-jazz-white :inherit default))))
-   `(line-number-current-line                ((,class (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-white :inherit line-number))))
+   `(line-number                             ((,class (:inherit fixed-pitch :foreground ,solo-jazz-slate :background ,solo-jazz-white))))
+   `(line-number-current-line                ((,class (:inherit fixed-pitch :foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-white))))
 
    ;; lispy
-   `(lispy-command-name-face                 ((t (:background ,solo-jazz-lavender :inherit font-lock-function-name-face))))
+   `(lispy-command-name-face                 ((t (:background ,solo-jazz-lavender :foreground ,solo-jazz-pink))))
    `(lispy-cursor-face                       ((t (:foreground ,solo-jazz-white :background ,solo-jazz-purple))))
-   `(lispy-face-hint                         ((t (:inherit highlight :foreground ,solo-jazz-teal))))
+   `(lispy-face-hint                         ((t (:background ,solo-jazz-lavender :foreground ,solo-jazz-purple))))
 
    ;; magit
    `(magit-bisect-good                       ((t (:foreground ,solo-jazz-slate))))
@@ -386,7 +386,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-structure                    ((t (:foreground ,solo-jazz-slate))))
 
    `(org-archived                            ((t (:foreground ,solo-jazz-purple :weight bold))))
-   `(org-block                               ((t (:foreground ,solo-jazz-black :background ,solo-jazz-white-1 :extend t :inherit 'fixed-pitch))))
+   `(org-block                               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-black :background ,solo-jazz-white-1 :extend t))))
    `(org-checkbox                            ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :box (:line-width 1 :style released-button)))))
    `(org-code                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-slate))))
    `(org-column                              ((t (:background ,solo-jazz-teal+1))))
@@ -412,7 +412,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    `(org-headline-done                       ((t (:foreground ,solo-jazz-teal+1 :strike-through t))))
    `(org-hide                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-white))))
-   `(org-indent                              ((t (:foreground ,solo-jazz-white :inherit 'fixed-pitch))))
+   `(org-indent                              ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-white))))
 
    `(org-level-1                             ((t (:foreground ,solo-jazz-teal))))
    `(org-level-2                             ((t (:foreground ,solo-jazz-blue))))
