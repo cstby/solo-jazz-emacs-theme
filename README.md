@@ -53,6 +53,7 @@ Download `solo-jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add th
 - magit
 - markdown
 - neotree
+- org mode
 - post-tip
 - show-paren
 - racket
