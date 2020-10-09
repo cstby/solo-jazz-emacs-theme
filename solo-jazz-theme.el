@@ -246,7 +246,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-bisect-skip                       ((t (:foreground ,solo-jazz-teal))))
    `(magit-bisect-bad                        ((t (:foreground ,solo-jazz-blue+1))))
 
-   `(magit-blame-heading                     ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(magit-blame-heading                     ((t (:background ,solo-jazz-lavender :foreground ,solo-jazz-purple))))
    `(magit-blame-hash                        ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
    `(magit-blame-name                        ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
    `(magit-blame-date                        ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
