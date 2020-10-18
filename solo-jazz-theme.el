@@ -594,5 +594,6 @@ this should be done.  This requires library `rainbow-mode'.")
                    (file-name-directory load-file-name))))
 
 (provide-theme 'solo-jazz)
+(provide 'solo-jazz-theme)
 
 ;;; solo-jazz-theme.el ends here
