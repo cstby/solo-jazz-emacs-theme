@@ -72,6 +72,17 @@ You can change the theme's base colors by defining them in the `solo-jazz-overri
 (load-theme 'solo-jazz t)
 ```
 
+## Rainbow Mode
+
+If you would like to modify the theme, you may find it useful to see the colors directly. You can do so using rainbow mode by executing the following.
+
+``` elisp
+(advice-add 'rainbow-turn-on :after  #'solo-jazz-theme-rainbow-turn-on)
+(advice-add 'rainbow-turn-off :after #'solo-jazz-theme-rainbow-turn-off)
+```
+
+Toggling rainbow-mode inside the `solo-jazz-theme.el` will colorize all solo-jazz color names wherever they appear in that buffer.
+
 ## Contributing
 
 Please feel free to send a GitHub pull request to add support for your favorite packages. If you find any bugs or problems, please report them in the issue tracker. I welcome contributions of any kind.

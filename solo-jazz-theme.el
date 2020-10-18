@@ -563,7 +563,7 @@ this should be done.  This requires library `rainbow-mode'.")
 
 (defvar solo-jazz-theme-colors-font-lock-keywords nil)
 
-(defun solo-jazz-theme--rainbow-turn-on ()
+(defun solo-jazz-theme-rainbow-turn-on ()
   "Maybe also add font-lock keywords for solo-jazz colors."
   (when (and (derived-mode-p 'emacs-lisp-mode)
              (or solo-jazz-theme-add-font-lock-keywords
@@ -576,13 +576,9 @@ this should be done.  This requires library `rainbow-mode'.")
                (0 (rainbow-colorize-by-assoc solo-jazz-theme-default-colors-alist))))))
     (font-lock-add-keywords nil solo-jazz-theme-colors-font-lock-keywords 'end)))
 
-(defun solo-jazz-theme--rainbow-turn-off ()
+(defun solo-jazz-theme-rainbow-turn-off ()
   "Also remove font-lock keywords for solo-jazz colors."
   (font-lock-remove-keywords nil solo-jazz-theme-colors-font-lock-keywords))
-
-(when (fboundp 'advice-add)
-  (advice-add 'rainbow-turn-on :after  #'solo-jazz-theme--rainbow-turn-on)
-  (advice-add 'rainbow-turn-off :after #'solo-jazz-theme--rainbow-turn-off))
 
 ;;; Footer
 
