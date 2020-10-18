@@ -572,7 +572,7 @@ this should be done.  This requires library `rainbow-mode'.")
                              "solo-jazz-theme.el"))))
     (unless solo-jazz-colors-font-lock-keywords
       (setq solo-jazz-colors-font-lock-keywords
-            `((,(regexp-opt (mapcar 'car solo-jazz-default-colors-alist) 'words)
+            `((,(regexp-opt (mapcar #'car solo-jazz-default-colors-alist) 'words)
                (0 (rainbow-colorize-by-assoc solo-jazz-default-colors-alist))))))
     (font-lock-add-keywords nil solo-jazz-colors-font-lock-keywords 'end)))
 
