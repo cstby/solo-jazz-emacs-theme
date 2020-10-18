@@ -39,44 +39,44 @@
 
 ;;; Color Palette
 
-(defvar solo-jazz-theme-default-colors-alist
-  '(("solo-jazz-white+1"                . "#ffffff")
-    ("solo-jazz-white"                  . "#fafafa")
-    ("solo-jazz-white-1"                . "#efefef")
-    ("solo-jazz-lavender"               . "#eaeafa")
-    ("solo-jazz-azure"                  . "#eafafa")
-    ("solo-jazz-grey"                   . "#d0d0d0")
-    ("solo-jazz-slate"                  . "#778ca3")
-    ("solo-jazz-black"                  . "#24292e")
+(eval-and-compile
+  (defvar solo-jazz-theme-default-colors-alist
+    '(("_solo-jazz-white+1"                . "#ffffff")
+      ("solo-jazz-white"                  . "#fafafa")
+      ("solo-jazz-white-1"                . "#efefef")
+      ("solo-jazz-lavender"               . "#eaeafa")
+      ("solo-jazz-azure"                  . "#eafafa")
+      ("solo-jazz-grey"                   . "#d0d0d0")
+      ("solo-jazz-slate"                  . "#778ca3")
+      ("solo-jazz-black"                  . "#24292e")
 
-    ("solo-jazz-orange"                 . "#ff5200")
-    ("solo-jazz-red"                    . "#fe2500")
-    ("solo-jazz-pink"                   . "#fa1090")
-    ("solo-jazz-violet"                 . "#c71585")
-    ("solo-jazz-purple+1"               . "#9d2dab")
-    ("solo-jazz-purple"                 . "#3b2685")
-    ("solo-jazz-blue"                   . "#005cc5")
-    ("solo-jazz-blue+1"                 . "#00afef")
-    ("solo-jazz-teal"                   . "#009c9f")
-    ("solo-jazz-teal+1"                 . "#04c4c7")
-    ("solo-jazz-green"                  . "#10d7ae")
+      ("solo-jazz-orange"                 . "#ff5200")
+      ("solo-jazz-red"                    . "#fe2500")
+      ("solo-jazz-pink"                   . "#fa1090")
+      ("solo-jazz-violet"                 . "#c71585")
+      ("solo-jazz-purple+1"               . "#9d2dab")
+      ("solo-jazz-purple"                 . "#3b2685")
+      ("solo-jazz-blue"                   . "#005cc5")
+      ("solo-jazz-blue+1"                 . "#00afef")
+      ("solo-jazz-teal"                   . "#009c9f")
+      ("solo-jazz-teal+1"                 . "#04c4c7")
+      ("solo-jazz-green"                  . "#10d7ae")
 
-    ;; diff
-    ("solo-jazz-diff-added"             . "#e6ffed")
-    ("solo-jazz-diff-added-highlight"   . "#acf2bd")
-    ("solo-jazz-diff-changed"           . "#ffe1b9")
-    ("solo-jazz-diff-changed-highlight" . "#ffc86f")
-    ("solo-jazz-diff-removed"           . "#ffeef0")
-    ("solo-jazz-diff-removed-highlight" . "#fdb8c0"))
+      ;; diff
+      ("solo-jazz-diff-added"             . "#e6ffed")
+      ("solo-jazz-diff-added-highlight"   . "#acf2bd")
+      ("solo-jazz-diff-changed"           . "#ffe1b9")
+      ("solo-jazz-diff-changed-highlight" . "#ffc86f")
+      ("solo-jazz-diff-removed"           . "#ffeef0")
+      ("solo-jazz-diff-removed-highlight" . "#fdb8c0"))
 
-  "Solo-Jazz color palette.Each element has the form (NAME . HEX).")
+    "Solo-Jazz color palette.Each element has the form (NAME . HEX).")
 
-(defvar solo-jazz-theme-override-colors-alist
-  '()
-  "Place to override default theme colors.
+  (defvar solo-jazz-theme-override-colors-alist '()
+    "Place to override default theme colors.
 
 You can override a subset of the theme's default colors by
-defining them in this alist before loading the theme.")
+defining them in this alist before loading the theme."))
 
 (defmacro solo-jazz-theme-with-color-variables (&rest body)
   "`let' bind all colors defined in `solo-jazz-colors-alist' around BODY.
