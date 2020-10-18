@@ -1,4 +1,4 @@
-;;; solo-jazz-theme.el --- The Solo-Jazz color theme for Emacs. -*- lexical-binding: t; -*-
+;;; solo-jazz-theme.el --- The Solo-Jazz color theme -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020, Carl Steib
 
