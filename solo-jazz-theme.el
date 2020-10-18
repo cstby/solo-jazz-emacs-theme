@@ -545,8 +545,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 
 ;;; Rainbow Support
 
-(declare-function rainbow-mode 'rainbow-mode)
-(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
+(declare-function rainbow-mode "rainbow-mode")
+(declare-function rainbow-colorize-by-assoc "rainbow-mode")
 
 (defvar solo-jazz-add-font-lock-keywords nil
   "Whether to add font-lock keywords for solo-jazz color names.
