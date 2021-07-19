@@ -128,7 +128,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mode-line-buffer-id                     ((t (:foreground ,solo-jazz-teal))))
    `(mode-line-inactive                      ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-white :box (:line-width -1 :color ,solo-jazz-grey)))))
    `(region                                  ((,class (:background ,solo-jazz-lavender))))
-   `(secondary-selection                     ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple))))
+   `(secondary-selection                     ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-white))))
    `(trailing-whitespace                     ((t (:background ,solo-jazz-red))))
    `(vertical-border                         ((t (:foreground ,solo-jazz-grey))))
 
@@ -208,7 +208,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    ;; ivy
    `(ivy-confirm-face                        ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
-   `(ivy-current-match                       ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-purple :weight bold))))
+   `(ivy-current-match                       ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-white :weight bold))))
    `(ivy-match-required-face                 ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
    `(ivy-remote                              ((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
    `(ivy-subdir                              ((t (:foreground ,solo-jazz-blue :background ,solo-jazz-white))))
@@ -445,7 +445,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    ;; show-paren
    `(show-paren-mismatch                     ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white :weight bold))))
-   `(show-paren-match                        ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1 :weight bold))))
+   `(show-paren-match                        ((t (:foreground ,solo-jazz-white :background ,solo-jazz-teal+1 :weight bold))))
    `(show-paren-match-expression             ((t (:background ,solo-jazz-white-1))))
 
    ;; undo-tree
