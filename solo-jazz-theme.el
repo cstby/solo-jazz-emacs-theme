@@ -191,6 +191,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(doom-modeline-buffer-major-mode         ((t (:foreground ,solo-jazz-purple))))
    `(doom-modeline-info                      ((t (:foreground ,solo-jazz-teal))))
 
+   ;; eval-sexp-fu
+   `(eval-sexp-fu-flash                      ((t (:background ,solo-jazz-blue :foreground ,solo-jazz-white))))
+   `(eval-sexp-fu-flash-error                ((t (:inherit error))))
+
    ;; hl-line
    `(hl-line-face                            ((,class (:background ,solo-jazz-azure)) (t :weight bold)))
    `(hl-line                                 ((,class (:background ,solo-jazz-azure)) (t :weight bold)))
