@@ -26,6 +26,21 @@ Inspired by the [Jazz](https://en.wikipedia.org/wiki/Jazz_(design)) design, this
 
 ## Installation
 
+### MELPA (recommended)
+
+You can install this theme with the following `package.el` command:
+`M-x package-install solo-jazz-theme`
+
+Or if you have `use-package` simply add this declaration to your `init.el`:
+``` elisp
+(use-package solo-jazz-theme
+  :ensure t
+  :config
+  (load-theme 'solo-jazz t))
+```
+
+### Manual
+
 Download `solo-jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add these lines to your `init.el`:
 
 ```emacs-lisp
