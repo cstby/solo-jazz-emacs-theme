@@ -41,11 +41,11 @@
 
 (eval-and-compile
   (defvar solo-jazz-theme-default-colors-alist
-    '(("_solo-jazz-white+1"               . "#ffffff")
-      ("solo-jazz-white"                  . "#fafafa")
+    '(("solo-jazz-white"                  . "#fafafa")
       ("solo-jazz-white-1"                . "#efefef")
       ("solo-jazz-lavender"               . "#eaeafa")
       ("solo-jazz-azure"                  . "#eafafa")
+      ("solo-jazz-rose"                   . "#faeaea")
       ("solo-jazz-grey"                   . "#d0d0d0")
       ("solo-jazz-slate"                  . "#778ca3")
       ("solo-jazz-black"                  . "#24292e")
@@ -446,7 +446,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; show-paren
    `(show-paren-mismatch                     ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white :weight bold))))
    `(show-paren-match                        ((t (:foreground ,solo-jazz-white :background ,solo-jazz-teal+1 :weight bold))))
-   `(show-paren-match-expression             ((t (:background ,solo-jazz-white-1))))
+   `(show-paren-match-expression             ((t (:background ,solo-jazz-rose))))
 
    ;; undo-tree
    `(undo-tree-visualizer-active-branch-face ((t (:foreground ,solo-jazz-teal :weight bold))))
