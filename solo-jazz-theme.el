@@ -449,7 +449,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    ;; show-paren
    `(show-paren-mismatch                     ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white :weight bold))))
-   `(show-paren-match                        ((t (:foreground ,solo-jazz-white :background ,solo-jazz-teal+1 :weight bold))))
+   `(show-paren-match                        ((t (:foreground ,solo-jazz-white :background ,solo-jazz-blue+1 :weight bold))))
    `(show-paren-match-expression             ((t (:background ,solo-jazz-rose))))
 
    ;; undo-tree
