@@ -184,6 +184,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-header                             ((,class (:background ,solo-jazz-white)) (t (:background ,solo-jazz-purple :foreground ,solo-jazz-white))))
    `(diff-file-header                        ((,class (:background ,solo-jazz-white :foreground ,solo-jazz-purple :bold t)) (t (:background ,solo-jazz-purple :foreground ,solo-jazz-white :bold t))))
 
+   ;; dired
+   `(dired-directory                         ((t (:foreground ,solo-jazz-blue))))
+   `(dired-header                            ((t (:foreground ,solo-jazz-teal))))
+   `(dired-symlink                           ((t (:inherit link))))
+   `(dired-subtree-depth-1-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(dired-subtree-depth-2-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(dired-subtree-depth-3-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(dired-subtree-depth-4-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(dired-subtree-depth-5-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(dired-subtree-depth-6-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
+   `(all-the-icons-dired-dir-face            ((t (:foreground ,solo-jazz-purple))))
+
    ;; doom-modeline
    `(doom-modeline-buffer-path               ((t (:foreground ,solo-jazz-purple))))
    `(doom-modeline-project-dir               ((t (:foreground ,solo-jazz-blue))))
