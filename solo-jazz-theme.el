@@ -330,37 +330,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-sequence-done                     ((t (:foreground ,solo-jazz-purple))))
    `(magit-sequence-onto                     ((t (:foreground ,solo-jazz-purple))))
 
-   `(magit-tag                               ((t (:foreground ,solo-jazz-pink :weight bold))))
-
-   `(magit-process-ok                        ((t (:inheret success))))
-   `(magit-process-ng                        ((t (:inherit error))))
-
-   `(magit-reflog-commit                     ((t (:foreground ,solo-jazz-slate))))
-   `(magit-reflog-amend                      ((t (:foreground ,solo-jazz-purple))))
-   `(magit-reflog-merge                      ((t (:foreground ,solo-jazz-slate))))
-   `(magit-reflog-checkout                   ((t (:foreground ,solo-jazz-purple))))
-   `(magit-reflog-reset                      ((t (:foreground ,solo-jazz-blue+1))))
-   `(magit-reflog-rebase                     ((t (:foreground ,solo-jazz-purple))))
-   `(magit-reflog-cherry-pick                ((t (:foreground ,solo-jazz-slate))))
-   `(magit-reflog-remote                     ((t (:foreground ,solo-jazz-pink))))
-   `(magit-reflog-other                      ((t (:foreground ,solo-jazz-pink))))
-
-   `(magit-refname                           ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
-   `(magit-refname-stash                     ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
-   `(magit-refname-wip                       ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
-
-   `(magit-section-highlight                 ((t (:background ,solo-jazz-lavender))))
-   `(magit-section-heading                   ((t (:foreground ,solo-jazz-teal :weight bold))))
-   `(magit-section-heading-selection         ((t (:foreground ,solo-jazz-purple :weight bold))))
-
-   `(magit-sequence-pick                     ((t (:foreground ,solo-jazz-purple))))
-   `(magit-sequence-stop                     ((t (:foreground ,solo-jazz-slate))))
-   `(magit-sequence-part                     ((t (:foreground ,solo-jazz-teal))))
-   `(magit-sequence-head                     ((t (:foreground ,solo-jazz-purple))))
-   `(magit-sequence-drop                     ((t (:foreground ,solo-jazz-blue+1))))
-   `(magit-sequence-done                     ((t (:foreground ,solo-jazz-purple))))
-   `(magit-sequence-onto                     ((t (:foreground ,solo-jazz-purple))))
-
    `(magit-tag                               ((t (:foreground ,solo-jazz-blue :weight bold))))
 
    `(magit-signature-good                    ((t (:foreground ,solo-jazz-slate))))
