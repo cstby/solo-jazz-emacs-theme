@@ -190,6 +190,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; dired
    `(dired-directory                         ((t (:foreground ,solo-jazz-blue))))
    `(dired-header                            ((t (:foreground ,solo-jazz-teal))))
+   `(dired-perm-write                        ((t (:foreground ,solo-jazz-pink))))
    `(dired-symlink                           ((t (:inherit link))))
    `(dired-subtree-depth-1-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
    `(dired-subtree-depth-2-face              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
