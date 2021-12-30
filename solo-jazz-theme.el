@@ -293,8 +293,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-head                              ((t (:foreground ,solo-jazz-purple   :weight bold))))
 
    `(magit-log-author                        ((t (:foreground ,solo-jazz-blue))))
-   `(magit-log-date                          ((t (:foreground ,solo-jazz-purple))))
-   `(magit-log-graph                         ((t (:foreground ,solo-jazz-purple))))
+   `(magit-log-date                          ((t (:foreground ,solo-jazz-teal))))
+   `(magit-log-graph                         ((t (:foreground ,solo-jazz-slate))))
 
    `(magit-popup-heading                     ((t (:foreground ,solo-jazz-teal  :weight bold))))
    `(magit-popup-key                         ((t (:foreground ,solo-jazz-slate :weight bold))))
@@ -331,7 +331,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-sequence-done                     ((t (:foreground ,solo-jazz-purple))))
    `(magit-sequence-onto                     ((t (:foreground ,solo-jazz-purple))))
 
-   `(magit-tag                               ((t (:foreground ,solo-jazz-blue :weight bold))))
+   `(magit-tag                               ((t (:foreground ,solo-jazz-orange :weight bold))))
 
    `(magit-signature-good                    ((t (:foreground ,solo-jazz-slate))))
    `(magit-signature-bad                     ((t (:foreground ,solo-jazz-blue+1))))
