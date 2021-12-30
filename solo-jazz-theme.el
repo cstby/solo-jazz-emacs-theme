@@ -4,7 +4,7 @@
 
 ;; Author: Carl Steib
 ;; URL: https://github.com/cstby/solo-jazz-emacs-theme
-;; Version: 0.8.0
+;; Version: 0.8.1
 ;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
