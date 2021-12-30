@@ -64,11 +64,13 @@
 
       ;; diff
       ("solo-jazz-diff-added"             . "#e6ffed")
-      ("solo-jazz-diff-added-highlight"   . "#acf2bd")
+      ("solo-jazz-diff-added-highlight"   . "#ccffd8")
+      ("solo-jazz-diff-added-refine"      . "#acf2bc")
       ("solo-jazz-diff-changed"           . "#ffe1b9")
       ("solo-jazz-diff-changed-highlight" . "#ffc86f")
       ("solo-jazz-diff-removed"           . "#ffeef0")
-      ("solo-jazz-diff-removed-highlight" . "#fdb8c0"))
+      ("solo-jazz-diff-removed-highlight" . "#ffd7d5")
+      ("solo-jazz-diff-removed-refine"    . "#fdb8c0"))
 
     "Solo-Jazz color palette.Each element has the form (NAME . HEX)."))
 
@@ -178,9 +180,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-added                              ((t (:background ,solo-jazz-diff-added :foreground ,solo-jazz-black))))
    `(diff-changed                            ((t (:background ,solo-jazz-diff-changed :foreground ,solo-jazz-black))))
    `(diff-removed                            ((t (:background ,solo-jazz-diff-removed :foreground ,solo-jazz-black))))
-   `(diff-refine-added                       ((t (:background ,solo-jazz-diff-added-highlight :foreground ,solo-jazz-black))))
+   `(diff-refine-added                       ((t (:background ,solo-jazz-diff-added-refine :foreground ,solo-jazz-black))))
    `(diff-refine-change                      ((t (:background ,solo-jazz-diff-changed-highlight :foreground ,solo-jazz-black))))
-   `(diff-refine-removed                     ((t (:background ,solo-jazz-diff-removed-highlight :foreground ,solo-jazz-black))))
+   `(diff-refine-removed                     ((t (:background ,solo-jazz-diff-removed-refine :foreground ,solo-jazz-black))))
    `(diff-header                             ((,class (:background ,solo-jazz-white)) (t (:background ,solo-jazz-purple :foreground ,solo-jazz-white))))
    `(diff-file-header                        ((,class (:background ,solo-jazz-white :foreground ,solo-jazz-purple :bold t)) (t (:background ,solo-jazz-purple :foreground ,solo-jazz-white :bold t))))
 
@@ -272,17 +274,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diffstat-removed                  ((t (:foreground ,solo-jazz-blue+1))))
 
    `(magit-diff-added                        ((t (:inherit diff-added))))
-   `(magit-diff-added-highlight              ((t (:inherit diff-refine-added))))
-   `(magit-diff-context-highlight            ((t (:background ,solo-jazz-white :foreground "grey70"))))
+   `(magit-diff-added-highlight              ((t (:background ,solo-jazz-diff-added-highlight :foreground ,solo-jazz-black))))
+   `(magit-diff-context                      ((t (:background ,solo-jazz-white :foreground ,solo-jazz-slate))))
+   `(magit-diff-context-highlight            ((t (:background ,solo-jazz-white :foreground ,solo-jazz-black))))
    `(magit-diff-file-heading                 ((t (:weight bold))))
-   `(magit-diff-file-heading-highlight       ((t (:background ,solo-jazz-white  :weight bold))))
+   `(magit-diff-file-heading-highlight       ((t (:background ,solo-jazz-lavender  :weight bold))))
    `(magit-diff-file-heading-selection       ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :weight bold))))
-   `(magit-diff-hunk-heading                 ((t (:background ,solo-jazz-white))))
-   `(magit-diff-hunk-heading-highlight       ((t (:background ,solo-jazz-white))))
+   `(magit-diff-hunk-heading                 ((t (:background ,solo-jazz-white-1 :weight bold))))
+   `(magit-diff-hunk-heading-highlight       ((t (:background ,solo-jazz-lavender :weight bold))))
    `(magit-diff-hunk-heading-selection       ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple))))
    `(magit-diff-lines-heading                ((t (:background ,solo-jazz-purple :foreground ,solo-jazz-white))))
    `(magit-diff-removed                      ((t (:inherit diff-removed))))
-   `(magit-diff-removed-highlight            ((t (:inherit diff-refine-removed))))
+   `(magit-diff-removed-highlight            ((t (:background ,solo-jazz-diff-removed-highlight :foreground ,solo-jazz-black))))
 
    `(magit-dimmed                            ((t (:foreground ,solo-jazz-slate))))
    `(magit-hash                              ((t (:foreground ,solo-jazz-pink))))
