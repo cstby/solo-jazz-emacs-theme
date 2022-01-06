@@ -1,15 +1,14 @@
-<h3 align="center">Solo Jazz Theme for Emacs</h3>
-<hr/>
+<h1 align="center">Solo Jazz Theme for Emacs</h1>
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/120px-EmacsIcon.svg.png" />
 </p>
-
 <p align="center">
 <a href="https://github.com/cstby/solo-jazz-emacs-theme"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
 <a href="https://github.com/cstby/solo-jazz-emacs-theme"><img src="https://img.shields.io/github/release/cstby/solo-jazz-emacs-theme" alt="Version"></a>
-<a href="https://www.gnu.org/software/emacs/"><img src="https://img.shields.io/badge/Emacs-26.1%2B-d24b83.svg" alt="Emacs"></a>
-<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="GPL License"></a>
+<a href="https://melpa.org/#/solo-jazz-theme"><img alt="MELPA" src="https://melpa.org/packages/solo-jazz-theme-badge.svg"/></a>
+<a href="https://www.gnu.org/software/emacs/"><img src="https://img.shields.io/badge/Emacs-27.1+-7F5AB6?logo=gnu-emacs" alt="Emacs"></a>
+<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3-A42E2B?logo=gnu" alt="GPL License"></a>
 </p>
 
 <br/>
@@ -31,7 +30,7 @@ Inspired by the [Jazz](https://en.wikipedia.org/wiki/Jazz_(design)) design, this
 You can install this theme with the following `package.el` command:
 `M-x package-install solo-jazz-theme`
 
-Or if you have `use-package` simply add this declaration to your `init.el`:
+Or if you have `use-package`, simply add this declaration to your `init.el`:
 ``` elisp
 (use-package solo-jazz-theme
   :ensure t
@@ -56,6 +55,7 @@ Download `solo-jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add th
 - cider
 - doom-modeline
 - diff
+- dired
 - ediff
 - ido
 - isearch
@@ -74,6 +74,7 @@ Download `solo-jazz-theme.el` and put it under `~/.emacs.d/themes/`, then add th
 - racket
 - undo-tree
 - web-mode
+- whitespace-mode
 
 ## Rainbow Mode
 
