@@ -42,7 +42,7 @@
 (eval-and-compile
   (defvar solo-jazz-theme-default-colors-alist
     '(("solo-jazz-white"                  . "#fafafa")
-      ("solo-jazz-white-1"                . "#efefef")
+      ("solo-jazz-white-1"                . "#f3f3f3")
       ("solo-jazz-lavender"               . "#eaeafa")
       ("solo-jazz-azure"                  . "#eafafa")
       ("solo-jazz-honeydew"               . "#eafaea")
@@ -340,9 +340,9 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    ;; markdown
    `(markdown-header-face                    ((t (:foreground ,solo-jazz-teal :weight bold))))
-   `(markdown-language-keyword-face          ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-pink :weight bold))))
-   `(markdown-inline-code-face               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-blue :background ,solo-jazz-white-1))))
-   `(markdown-code-face                      ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-blue :background ,solo-jazz-white-1 :extend t))))
+   `(markdown-language-keyword-face          ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-slate :weight bold))))
+   `(markdown-inline-code-face               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-violet :background ,solo-jazz-rose))))
+   `(markdown-code-face                      ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-purple :background ,solo-jazz-white-1 :extend t))))
 
    ;; neotree
    `(neo-banner-face                         ((t (:foreground ,solo-jazz-teal :weight bold))))
@@ -369,9 +369,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-structure                    ((t (:foreground ,solo-jazz-slate))))
 
    `(org-archived                            ((t (:foreground ,solo-jazz-purple :weight bold))))
-   `(org-block                               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-black :background ,solo-jazz-white-1 :extend t))))
+   `(org-block                               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-purple :background ,solo-jazz-white-1 :extend t))))
+   `(org-block-begin-line                    ((t (:foreground ,solo-jazz-slate :extend t))))
+   `(org-block-end-line                      ((t (:foreground ,solo-jazz-slate :extend t))))
    `(org-checkbox                            ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :box (:line-width 1 :style released-button)))))
-   `(org-code                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-slate))))
+   `(org-code                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-violet :background ,solo-jazz-rose))))
    `(org-column                              ((t (:background ,solo-jazz-teal+1))))
    `(org-column-title                        ((t (:background ,solo-jazz-teal+1 :underline t :weight bold))))
    `(org-date                                ((t (:foreground ,solo-jazz-purple :underline t))))
@@ -417,7 +419,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    `(org-sexp-date                           ((t (:foreground ,solo-jazz-teal :underline t))))
    `(org-special-keyword                     ((t (:inherit font-lock-comment-face))))
-   `(org-table                               ((t (:foreground ,solo-jazz-grey))))
+   `(org-table                               ((t (:inherit fixed-width :foreground ,solo-jazz-slate))))
    `(org-tag                                 ((t (:bold t :weight bold))))
    `(org-time-grid                           ((t (:foreground ,solo-jazz-purple))))
    `(org-todo                                ((t (:bold t :foreground ,solo-jazz-pink :weight bold))))
