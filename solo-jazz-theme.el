@@ -155,17 +155,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected-modified :foreground ,solo-jazz-teal :box nil))))
 
    ;; company
-   `(company-tooltip                         ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-lavender))))
-   `(company-tooltip-annotation              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
-   `(company-tooltip-annotation-selection    ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1))))
-   `(company-tooltip-selection               ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-teal+1))))
-   `(company-tooltip-mouse                   ((t (:background ,solo-jazz-teal+1))))
+   `(company-tooltip                         ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white-1))))
+   `(company-tooltip-annotation              ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white-1))))
+   `(company-tooltip-annotation-selection    ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-lavender))))
+   `(company-tooltip-selection               ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-lavender))))
+   `(company-tooltip-mouse                   ((t (:background ,solo-jazz-lavender))))
    `(company-tooltip-common                  ((t (:foreground ,solo-jazz-blue))))
    `(company-tooltip-common-selection        ((t (:foreground ,solo-jazz-blue))))
    `(company-scrollbar-fg                    ((t (:background ,solo-jazz-purple))))
-   `(company-scrollbar-bg                    ((t (:background ,solo-jazz-lavender))))
-   `(company-preview                         ((t (:background ,solo-jazz-slate))))
-   `(company-preview-common                  ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-teal+1))))
+   `(company-scrollbar-bg                    ((t (:background ,solo-jazz-white-1))))
+   `(company-preview                         ((t (:background ,solo-jazz-honeydew))))
+   `(company-preview-common                  ((t (:foreground ,solo-jazz-teal :background ,solo-jazz-honeydew))))
 
    ;; cider
    `(cider-result-overlay-face               ((t (:foreground ,solo-jazz-purple :box (:color ,solo-jazz-purple :line-width -1)))))
