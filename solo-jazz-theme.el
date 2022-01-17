@@ -42,7 +42,8 @@
 (eval-and-compile
   (defvar solo-jazz-theme-default-colors-alist
     '(("solo-jazz-white"                  . "#fafafa")
-      ("solo-jazz-white-1"                . "#f3f3f3")
+      ("solo-jazz-white-1"                . "#f4f4f4")
+      ("solo-jazz-white-2"                . "#efeff1")
       ("solo-jazz-lavender"               . "#eaeafa")
       ("solo-jazz-azure"                  . "#eafafa")
       ("solo-jazz-honeydew"               . "#eafaea")
