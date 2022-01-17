@@ -132,7 +132,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mode-line-buffer-id                     ((t (:foreground ,solo-jazz-teal))))
    `(mode-line-inactive                      ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-white :box (:line-width -1 :color ,solo-jazz-grey)))))
    `(region                                  ((,class (:background ,solo-jazz-lavender))))
-   `(secondary-selection                     ((t (:background ,solo-jazz-teal+1 :foreground ,solo-jazz-white))))
+   `(secondary-selection                     ((t (:background ,solo-jazz-honeydew))))
    `(trailing-whitespace                     ((t (:background ,solo-jazz-red))))
    `(vertical-border                         ((t (:foreground ,solo-jazz-grey))))
 
@@ -223,9 +223,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-indicator                           ((t (:foreground ,solo-jazz-teal :background ,solo-jazz-purple))))
 
    ;; isearch
-   `(isearch                                 ((t (:foreground ,solo-jazz-purple+1 :weight bold :background ,solo-jazz-teal+1))))
+   `(isearch                                 ((t (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-rose))))
    `(isearch-fail                            ((t (:foreground ,solo-jazz-red :background ,solo-jazz-white))))
-   `(lazy-highlight                          ((t (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-lavender))))
+   `(lazy-highlight                          ((t (:foreground ,solo-jazz-purple :weight bold :background ,solo-jazz-honeydew))))
 
    ;; ivy
    `(ivy-confirm-face                        ((t (:foreground ,solo-jazz-purple :background ,solo-jazz-white))))
