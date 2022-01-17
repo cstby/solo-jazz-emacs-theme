@@ -339,6 +339,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-signature-bad                     ((t (:foreground ,solo-jazz-blue+1))))
    `(magit-signature-untrusted               ((t (:foreground ,solo-jazz-teal))))
 
+   ;; marginalia
+   `(marginalia-documentation                ((t (:inherit font-lock-comment-face))))
+   `(marginalia-file-priv-write              ((t (:inherit dired-perm-write))))
+   `(marginalia-file-priv-read               ((t (:foreground ,solo-jazz-purple))))
+   `(marginalia-file-priv-exec               ((t (:foreground ,solo-jazz-violet))))
+   `(marginalia-key                          ((t (:foreground ,solo-jazz-blue))))
+
    ;; markdown
    `(markdown-header-face                    ((t (:foreground ,solo-jazz-teal :weight bold))))
    `(markdown-language-keyword-face          ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-slate :weight bold))))
