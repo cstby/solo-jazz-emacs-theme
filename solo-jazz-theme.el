@@ -378,8 +378,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    `(org-archived                            ((t (:foreground ,solo-jazz-purple :weight bold))))
    `(org-block                               ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-purple :background ,solo-jazz-white-1 :extend t))))
-   `(org-block-begin-line                    ((t (:foreground ,solo-jazz-slate :extend t))))
-   `(org-block-end-line                      ((t (:foreground ,solo-jazz-slate :extend t))))
+   `(org-block-begin-line                    ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-white-1 :extend t))))
+   `(org-block-end-line                      ((t (:foreground ,solo-jazz-slate :background ,solo-jazz-white-1 :extend t))))
    `(org-checkbox                            ((t (:background ,solo-jazz-white :foreground ,solo-jazz-purple :box (:line-width 1 :style released-button)))))
    `(org-code                                ((t (:inherit 'fixed-pitch :foreground ,solo-jazz-violet :background ,solo-jazz-rose))))
    `(org-column                              ((t (:background ,solo-jazz-teal+1))))
